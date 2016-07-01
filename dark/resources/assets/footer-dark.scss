@@ -1,0 +1,243 @@
+$white = '#fff';
+$red = "#f00";
+body, html {
+  font-family: Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.footer-home {
+  background-color: #161a1e;
+  padding: 30px 0 25px;
+  position: relative;
+}
+
+.footer-home--title {
+  color: #f1f1f1;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+a {
+  background-color: transparent;
+  color: #337ab7;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.footer-home {
+  .float-left {
+    float: left;
+  }
+  .float-right {
+    float: right;
+  }
+}
+
+.footer-home--icon {
+  border-radius: 0px;
+  display: block;
+  font-size: 14px;
+  font-weight: 300;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 10px;
+  margin: 5px 0 10px;
+  width: 170px;
+  &.facebook {
+    border: 1px solid #37589a;
+    color: #37589a;
+    margin-right: 5px;
+    border-left: 4px solid #37589a;
+    &:hover {
+      background-color: #37589a;
+    }
+  }
+  &.twitter {
+    border: 1px solid #0ab8ed;
+    color: #0ab8ed;
+    &:hover {
+      background-color: #0ab8ed;
+    }
+  }
+  &.google {
+    border: 1px solid #da4a38;
+    color: #da4a38;
+    &:hover {
+      background-color: #da4a38;
+    }
+  }
+  &.github {
+    border: 1px solid #444;
+    color: #444;
+    &:hover {
+      background-color: #444;
+    }
+  }
+  &:hover {
+    color: #f1f1f1;
+  }
+  i {
+    margin-right: 5px;
+  }
+}
+
+.footer-home--link {
+  color: #f1f1f1;
+  display: block;
+  font-size: 15px;
+  font-weight: 200;
+  max-width: 120px;
+  line-height: 21px;
+  padding: 7px 0;
+  &:focus, &:hover {
+    color: #acbbc5;
+  }
+}
+
+.footer-home--contact{
+  color: #f1f1f1;
+  font-size: 15px;
+  & i{
+    padding-top: 10px;
+    font-size: 20px;
+  }
+}
+
+.footer-home--news input {
+  &[type=email] {
+    border-radius: 2px;
+    background-color: #3e4144;
+    width: 170px;
+    height: 39px;
+    margin-bottom: 15px;
+    margin-right: 8px;
+    color: #eee;
+    padding: 0 15px;
+    outline: 0;
+    border: none;
+  }
+  &[type=button] {
+    border-radius: 2px;
+    background-color: #2F7756;
+    padding: 13px 16px;
+    outline: 0;
+    border: none;
+    color: #FFF;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1;
+    cursor: pointer;
+  }
+}
+
+.hr-footer {
+  border-top: 1px solid #23282e;
+}
+
+.copy {
+  color: #f1f1f1;
+}
+
+.navbar-default {
+  background-color: #2C3E50;
+  border-color: transparent;
+  .navbar-brand {
+    color: #fff;
+    &:hover, &:focus {
+      color: #009586;
+      background-color: transparent;
+    }
+  }
+  .navbar-text {
+    color: #777;
+  }
+  .navbar-nav > {
+    li > a {
+      color: #fff;
+      &:hover, &:focus {
+        color: #009586;
+        background-color: transparent;
+      }
+    }
+    .active > a {
+      color: #009586;
+      background-color: #1a242f;
+      &:hover, &:focus {
+        color: #009586;
+        background-color: #1a242f;
+      }
+    }
+    .disabled > a {
+      color: #ccc;
+      background-color: transparent;
+      &:hover, &:focus {
+        color: #ccc;
+        background-color: transparent;
+      }
+    }
+  }
+  .navbar-toggle {
+    border-color: #1a242f;
+    &:hover, &:focus {
+      background-color: #1a242f;
+    }
+    .icon-bar {
+      background-color: #fff;
+    }
+  }
+  .navbar-collapse, .navbar-form {
+    border-color: transparent;
+  }
+  .navbar-nav > .open > a {
+    background-color: #1a242f;
+    color: #009586;
+    &:hover, &:focus {
+      background-color: #1a242f;
+      color: #009586;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-home {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .footer-home--icon {
+    margin: 10px auto;
+    &.facebook {
+      margin-right: auto;
+    }
+  }
+  .footer-bar {
+    padding: 0 40px;
+  }
+  .footer-home--link {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-home {
+    .float-left, .float-right {
+      width: 50%;
+    }
+  }
+  .footer-home--link {
+    display: inline-block;
+    float: left;
+    clear: both;
+  }
+}
+
+@media (max-width: 992px) {
+  .footer-home {
+    .float-left, .float-right {
+      float: none;
+    }
+  }
+}
