@@ -1,22 +1,27 @@
-$white = '#fff';
-$red = "#f00";
-body, html {
-  font-family: Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-}
+@import "color.scss";
+@import "header-example.scss";
 
 .footer-home {
   background-color: #161a1e;
   padding: 30px 0 25px;
   position: relative;
+  ul {
+    padding: 0;
+    li {
+      list-style: none;
+
+    }
+  }
 }
 
 .footer-home--title {
-  color: #f1f1f1;
+  color: $white;
   font-weight: 700;
-  font-size: 20px;
-  margin-bottom: 10px;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  padding-bottom: 6px;
+  border: 0;
+  border-bottom: 1px solid #141619;
 }
 
 a {
@@ -38,7 +43,6 @@ a {
 }
 
 .footer-home--icon {
-  border-radius: 0px;
   display: block;
   font-size: 14px;
   font-weight: 300;
@@ -48,37 +52,36 @@ a {
   margin: 5px 0 10px;
   width: 170px;
   &.facebook {
-    border: 1px solid #37589a;
-    color: #37589a;
+    border: 1px solid $facebookColor;
+    color: $facebookColor;
     margin-right: 5px;
-    border-left: 4px solid #37589a;
     &:hover {
-      background-color: #37589a;
+      background-color: $facebookColor;
     }
   }
   &.twitter {
-    border: 1px solid #0ab8ed;
-    color: #0ab8ed;
+    border: 1px solid $twitterColor;
+    color: $twitterColor;
     &:hover {
-      background-color: #0ab8ed;
+      background-color: $twitterColor;
     }
   }
   &.google {
-    border: 1px solid #da4a38;
-    color: #da4a38;
+    border: 1px solid $googleColor;
+    color: $googleColor;
     &:hover {
-      background-color: #da4a38;
+      background-color: $googleColor;
     }
   }
   &.github {
-    border: 1px solid #444;
-    color: #444;
+    border: 1px solid $githubColor;
+    color: $githubColor;
     &:hover {
-      background-color: #444;
+      background-color: $githubColor;
     }
   }
   &:hover {
-    color: #f1f1f1;
+    color: $white;
   }
   i {
     margin-right: 5px;
@@ -86,121 +89,69 @@ a {
 }
 
 .footer-home--link {
-  color: #f1f1f1;
+  color: $white;
   display: block;
-  font-size: 15px;
+  font-size: $font13;
   font-weight: 200;
   max-width: 120px;
   line-height: 21px;
-  padding: 7px 0;
+  padding: 2px 0;
   &:focus, &:hover {
     color: #acbbc5;
   }
 }
 
 .footer-home--contact{
-  color: #f1f1f1;
-  font-size: 15px;
+  color: $white;
+  font-size: $font13;
   & i{
     padding-top: 10px;
-    font-size: 20px;
   }
 }
 
-.footer-home--news input {
-  &[type=email] {
-    border-radius: 2px;
-    background-color: #3e4144;
-    width: 170px;
-    height: 39px;
-    margin-bottom: 15px;
-    margin-right: 8px;
-    color: #eee;
-    padding: 0 15px;
-    outline: 0;
-    border: none;
-  }
-  &[type=button] {
-    border-radius: 2px;
-    background-color: #2F7756;
-    padding: 13px 16px;
-    outline: 0;
-    border: none;
-    color: #FFF;
-    font-size: 13px;
-    font-weight: bold;
-    line-height: 1;
-    cursor: pointer;
+.footer-home--news form {
+  margin: 0;
+  padding: 0;
+  input {
+    &[type=email] {
+      outline: 0;
+      color: #eee;
+      height: 39px;
+      border: none;
+      padding: 0 5px;
+      min-width: 170px;
+      margin-right: -4px;
+      margin-bottom: 15px;
+      background-color: #3e4144;
+    }
+    &[type=submit] {
+      outline: 0;
+      color: #fff;
+      border: none;
+      border-radius: 0 20px 20px 0;
+      line-height: 1;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 13px 16px;
+      background-color: #2F7756;
+      &:hover{
+        background-color: #3b946b
+      }
+    }
   }
 }
 
 .hr-footer {
-  border-top: 1px solid #23282e;
+  border: 0;
+  border-top: 1px solid #1c2227;
+  border-bottom: 1px solid #141619;
 }
 
 .copy {
-  color: #f1f1f1;
+  color: $white;
 }
 
-.navbar-default {
-  background-color: #2C3E50;
-  border-color: transparent;
-  .navbar-brand {
-    color: #fff;
-    &:hover, &:focus {
-      color: #009586;
-      background-color: transparent;
-    }
-  }
-  .navbar-text {
-    color: #777;
-  }
-  .navbar-nav > {
-    li > a {
-      color: #fff;
-      &:hover, &:focus {
-        color: #009586;
-        background-color: transparent;
-      }
-    }
-    .active > a {
-      color: #009586;
-      background-color: #1a242f;
-      &:hover, &:focus {
-        color: #009586;
-        background-color: #1a242f;
-      }
-    }
-    .disabled > a {
-      color: #ccc;
-      background-color: transparent;
-      &:hover, &:focus {
-        color: #ccc;
-        background-color: transparent;
-      }
-    }
-  }
-  .navbar-toggle {
-    border-color: #1a242f;
-    &:hover, &:focus {
-      background-color: #1a242f;
-    }
-    .icon-bar {
-      background-color: #fff;
-    }
-  }
-  .navbar-collapse, .navbar-form {
-    border-color: transparent;
-  }
-  .navbar-nav > .open > a {
-    background-color: #1a242f;
-    color: #009586;
-    &:hover, &:focus {
-      background-color: #1a242f;
-      color: #009586;
-    }
-  }
-}
 
 @media (max-width: 767px) {
   .footer-home {
