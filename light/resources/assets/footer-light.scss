@@ -2,7 +2,7 @@
 @import "header-example.scss";
 
 .footer-home {
-  background-color: #161a1e;
+  background-color: #b7b7b7;
   padding: 30px 0 25px;
   position: relative;
   ul {
@@ -15,13 +15,13 @@
 }
 
 .footer-home--title {
-  color: $white;
+  color: #3a3a3a;
   font-weight: 700;
   font-size: 15px;
   letter-spacing: 1.5px;
   padding-bottom: 6px;
   border: 0;
-  border-bottom: 1px solid #141619;
+  border-bottom: 1px solid #ababab;
 }
 
 a {
@@ -52,32 +52,36 @@ a {
   margin: 5px 0 10px;
   width: 170px;
   &.facebook {
+    background-color: $facebookColor;
     border: 1px solid $facebookColor;
-    color: $facebookColor;
+    color: $white;
     margin-right: 5px;
     &:hover {
-      background-color: $facebookColor;
+      background-color: #446ab5;
     }
   }
   &.twitter {
+    background-color: $twitterColor;
     border: 1px solid $twitterColor;
-    color: $twitterColor;
+    color: $white;
     &:hover {
-      background-color: $twitterColor;
+      background-color: #1cc2f5;
     }
   }
   &.google {
+    background-color: $googleColor;
     border: 1px solid $googleColor;
-    color: $googleColor;
+    color: $white;
     &:hover {
-      background-color: $googleColor;
+      background-color: #ec5846;
     }
   }
   &.github {
+    background-color: $githubColor;
     border: 1px solid $githubColor;
-    color: $githubColor;
+    color: $white;
     &:hover {
-      background-color: $githubColor;
+      background-color: #555;
     }
   }
   &:hover {
@@ -89,7 +93,7 @@ a {
 }
 
 .footer-home--link {
-  color: $white;
+  color: #333;
   display: block;
   font-size: $font13;
   font-weight: 200;
@@ -97,12 +101,12 @@ a {
   line-height: 21px;
   padding: 2px 0;
   &:focus, &:hover {
-    color: #acbbc5;
+    color: #777;
   }
 }
 
 .footer-home--contact{
-  color: $white;
+  color: #333;
   font-size: $font13;
   & i{
     padding-top: 10px;
@@ -122,7 +126,7 @@ a {
       min-width: 170px;
       margin-right: -4px;
       margin-bottom: 15px;
-      background-color: #3e4144;
+      background-color: #868686;
     }
     &[type=submit] {
       outline: 0;
@@ -144,12 +148,11 @@ a {
 
 .hr-footer {
   border: 0;
-  border-top: 1px solid #1c2227;
-  border-bottom: 1px solid #141619;
+  border-bottom: 1px solid #ababab;
 }
 
 .copy {
-  color: $white;
+  color: #333;
 }
 
 
