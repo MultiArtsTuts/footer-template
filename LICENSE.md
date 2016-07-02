@@ -8,6 +8,6 @@ Você pode usar, modificar e construir sobre o nosso código para projetos pesso
 
 Você não tem permissão para redistribuir nossos arquivos de demonstração diretamente (que são incentivados a compartilhar um link para os tutoriais em vez disso).
 
-Se você pretende incluir o nosso código-fonte em modelos de site ou para empacotá-lo com outras formas de conteúdo digital, destinados a venda direta em sites (como ThemeForest, ActiveDen etc.), que são obrigados a incluir um link de volta ao artigo em questão no <joaomello.xyz>.
+Se você pretende incluir o nosso código-fonte em modelos de site ou para empacotá-lo com outras formas de conteúdo digital, destinados a venda direta em sites (como ThemeForest, ActiveDen etc.), que são obrigados a incluir um link de volta ao artigo em questão no <http://joaomello.xyz>.
 
 Sinta-se livre para contactar-nos se você tiver alguma dúvida sobre nossos termos de licenciamento.
